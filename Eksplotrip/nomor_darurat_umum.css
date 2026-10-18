@@ -1,0 +1,750 @@
+/* ==========================================================================
+   EksploTrip - Nomor Darurat Umum Stylesheet
+   Pixel-perfect implementation matching Figma Design (Nomor_Darurat_Umum.png)
+   ========================================================================== */
+
+/* Design Tokens & Variables */
+:root {
+    --color-succes: #8ABC43;
+    --color-bg: #F4F4F4;
+    --color-text-highlight: #568942;
+    --color-footer: #375E27;
+    --color-button: #32AAC6;
+    --color-button-hover: #2B7983;
+    --color-text: #040811;
+    --color-card: #FFFFFF;
+    --color-text-white: #FFFFFF;
+    --color-placeholder: #888080;
+    --color-hover-text: #444444;
+    --color-placeholder-card: #EFEFEF;
+    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --card-shadow: 0px 2px 10px rgba(4, 8, 17, 0.18);
+    --pill-shadow: 0px 1px 5px rgba(4, 8, 17, 0.22);
+    --button-shadow: 0px 4px 12px rgba(50, 170, 198, 0.35);
+    --artboard-width: 1440px;
+    --screen-padding: 50px;
+}
+
+/* Base Resets */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 24px;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button, input {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: none;
+    cursor: pointer;
+}
+
+/* Material Symbols standard sizing */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.icon-filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ==========================================================================
+   1. Header / Navbar
+   ========================================================================== */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-card);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(4, 8, 17, 0.06);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: var(--artboard-width);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 var(--screen-padding);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.navbar-logo {
+    width: 81px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 100%;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    height: 100%;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: var(--color-hover-text);
+}
+
+.nav-item.active a {
+    color: var(--color-button);
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 3.5px;
+    background-color: var(--color-button);
+    border-radius: 99px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+}
+
+.btn-back-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text);
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-back-nav:hover {
+    color: var(--color-button);
+    background-color: rgba(50, 170, 198, 0.08);
+}
+
+.btn-back-nav .material-symbols-outlined {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.btn-back-nav:hover .material-symbols-outlined {
+    transform: translateX(-3px);
+}
+
+/* ==========================================================================
+   2. Hero Banner Section
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.hero-bg-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: var(--artboard-width);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 var(--screen-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color-text-highlight);
+    color: var(--color-text-white);
+    height: 16px;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-size: 8.5px;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: 4px;
+}
+
+.hero-badge .material-symbols-outlined {
+    font-size: 11px;
+    color: var(--color-text-white);
+}
+
+.hero-title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--color-text-white);
+    max-width: 600px;
+    margin: 0;
+    letter-spacing: -0.2px;
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.hero-title strong {
+    color: var(--color-succes);
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.hero-desc {
+    font-size: 13.5px;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--color-text-white);
+    max-width: 550px;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   3. Nomor Darurat Umum Section
+   ========================================================================== */
+.emergency-numbers-section {
+    width: 100%;
+    max-width: var(--artboard-width);
+    margin: 34px auto 0;
+    padding: 0 var(--screen-padding);
+}
+
+/* Section Header */
+.emergency-header-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.emergency-header-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #E25136;
+    color: var(--color-text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0px 2px 6px rgba(4, 8, 17, 0.2);
+}
+
+.emergency-header-icon .material-symbols-outlined {
+    font-size: 24px;
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+.emergency-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.emergency-main-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.emergency-sub-title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-hover-text);
+}
+
+/* Grid 3x2 Emergency Cards */
+.emergency-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 380px));
+    justify-content: space-between;
+    column-gap: 48px;
+    row-gap: 26px;
+}
+
+.emergency-card {
+    background-color: var(--color-placeholder-card);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    padding: 20px 22px 18px 24px;
+    min-height: 164px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emergency-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(4, 8, 17, 0.22);
+}
+
+.emergency-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.emergency-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--color-text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0px 2px 5px rgba(4, 8, 17, 0.18);
+}
+
+.emergency-icon-circle .material-symbols-outlined {
+    font-size: 24px;
+    font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+}
+
+.emergency-icon-circle .material-symbols-outlined.icon-filled {
+    font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+}
+
+.emergency-icon-circle svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* Icon Circle Colors matching Figma */
+.emergency-icon-circle.icon-yellow {
+    background-color: #EFCD4B;
+}
+
+.emergency-icon-circle.icon-teal {
+    background-color: #4B8A93;
+}
+
+.emergency-icon-circle.icon-red {
+    background-color: #E15940;
+}
+
+.emergency-icon-circle.icon-green {
+    background-color: #5E8D4B;
+}
+
+.emergency-icon-circle.icon-orange {
+    background-color: #F4A246;
+}
+
+.emergency-icon-circle.icon-cyan {
+    background-color: #46AFC8;
+}
+
+.emergency-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.emergency-card-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.emergency-card-number {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-top: 6px;
+    letter-spacing: 0.2px;
+}
+
+.emergency-card-number a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.emergency-card-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.emergency-card-desc {
+    font-size: 10.5px;
+    line-height: 15px;
+    font-weight: 400;
+    color: var(--color-hover-text);
+    max-width: 240px;
+}
+
+/* Tombol Salin */
+.btn-copy-emergency {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--color-card);
+    color: var(--color-text);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 6px;
+    box-shadow: var(--pill-shadow);
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.btn-copy-emergency .material-symbols-outlined {
+    font-size: 12px;
+    color: var(--color-text);
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 20;
+}
+
+.btn-copy-emergency:hover {
+    background-color: var(--color-button);
+    color: var(--color-text-white);
+    transform: translateY(-1px);
+}
+
+.btn-copy-emergency:hover .material-symbols-outlined {
+    color: var(--color-text-white);
+}
+
+.btn-copy-emergency.copied {
+    background-color: var(--color-text-highlight);
+    color: var(--color-text-white);
+}
+
+.btn-copy-emergency.copied .material-symbols-outlined {
+    color: var(--color-text-white);
+}
+
+/* ==========================================================================
+   4. Banner Bawah Section
+   ========================================================================== */
+.banner-bottom-section {
+    width: 100%;
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+.banner-bottom-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-bottom-img {
+    width: 100%;
+    height: 233px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* ==========================================================================
+   5. Footer
+   ========================================================================== */
+.site-footer {
+    width: 100%;
+    background-color: var(--color-footer);
+    color: var(--color-text-white);
+}
+
+.footer-container {
+    width: 100%;
+    max-width: var(--artboard-width);
+    margin: 0 auto;
+    padding: 36px var(--screen-padding) 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.footer-col-brand {
+    max-width: 330px;
+    flex: 0 0 330px;
+}
+
+.footer-logo {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.footer-brand-desc {
+    font-size: 11.5px;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--color-text-white);
+}
+
+.footer-col-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--color-text-white);
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--color-text-white);
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    opacity: 0.85;
+    transform: translateX(2px);
+}
+
+.footer-col-social {
+    max-width: 310px;
+    flex: 0 0 310px;
+}
+
+.footer-social-desc {
+    font-size: 11.5px;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--color-text-white);
+    margin-bottom: 14px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icon-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.social-icon-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.social-icon-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: 24px 0 16px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--color-text-white);
+    text-align: center;
+    display: block;
+}
+
+.footer-copyright strong {
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   6. Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .emergency-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 28px;
+    }
+    .footer-top {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --screen-padding: 20px;
+    }
+    .navbar-container {
+        grid-template-columns: auto 1fr auto;
+        gap: 12px;
+    }
+    .nav-links {
+        gap: 16px;
+    }
+    .nav-item a {
+        font-size: 13px;
+    }
+    .hero-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .emergency-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-col-brand,
+    .footer-col-social {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

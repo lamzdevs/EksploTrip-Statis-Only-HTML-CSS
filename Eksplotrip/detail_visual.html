@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Visual - Curug Cibulao, Cisarua | EksploTrip</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Google Material Symbols Outlined -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Detail Visual Stylesheet -->
+    <link rel="stylesheet" href="detail_visual.css">
+</head>
+<body>
+
+    <!-- ===== 1. HEADER / NAVBAR ===== -->
+    <header class="detail-navbar" role="banner">
+        <div class="detail-navbar-container">
+            <a href="beranda.html" class="navbar-brand" aria-label="EksploTrip Beranda">
+                <img src="assets/images/detail_visual/logo_eksplotrip_navbar.png" alt="EksploTrip Logo" class="navbar-brand-logo">
+            </a>
+
+            <a href="detail_katalog.html" class="btn-back-nav" id="btn-back-nav" aria-label="Kembali ke Detail Katalog">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Kembali</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== 2. MAIN CONTENT ===== -->
+    <main>
+
+        <!-- Hero Banner Section -->
+        <section class="hero-detail-section" aria-label="Informasi Utama Curug Cibulao">
+            <div class="hero-detail-bg">
+                <img src="assets/images/detail_visual/banner_atas.png" alt="Curug Cibulao Cisarua" class="hero-detail-img">
+                <div class="hero-detail-overlay"></div>
+            </div>
+
+            <div class="hero-detail-content">
+                <div class="hero-verified-badge">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span>Destinasi Terverifikasi</span>
+                </div>
+
+                <h1 class="hero-detail-title">
+                    Curug Cibulao,
+                    <span class="highlight-cisarua">Cisarua</span>
+                </h1>
+
+                <p class="hero-detail-desc">
+                    Curug Cibulao adalah salah satu destinasi wisata alam yang populer di Kecamatan Cisarua, Bogor. Dengan akses yang mudah, jalur landai, dan suasana alam yang sejuk, tempat ini cocok untuk dikunjungi bersama keluarga maupun pemula yang ingin menikmati keindahan air terjun.
+                </p>
+
+                <div class="hero-tags-row">
+                    <span class="hero-tag-pill">Trek Landai</span>
+                    <span class="hero-tag-pill">Alam Asri</span>
+                    <span class="hero-tag-pill">Ramah Keluarga</span>
+                </div>
+
+                <div class="hero-meta-row">
+                    <div class="hero-meta-item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <span>Cisarua, Bogor</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <span class="material-symbols-outlined">landscape</span>
+                        <span>+ 789 Mdpl</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <span class="material-symbols-outlined">hiking</span>
+                        <span>+ 10 Menit Dari Parkiran</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Cards Layout -->
+        <div class="detail-main-layout">
+
+            <!-- Katalog Visual Main Card -->
+            <section class="visual-catalog-main-card" aria-label="Katalog Visual Kondisi Nyata">
+                
+                <!-- Card Header -->
+                <div class="card-section-header">
+                    <div class="header-left-group">
+                        <div class="header-icon-box">
+                            <span class="material-symbols-outlined">grid_view</span>
+                        </div>
+                        <div>
+                            <h2 class="card-title">Katalog Visual (Tanpa Filter)</h2>
+                            <p class="card-subtitle">Informasi kondisi lapangan secara jujur dan real di lokasi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab & Filter Toolbar -->
+                <div class="visual-filter-toolbar">
+                    <!-- Left: Media Type Tabs -->
+                    <div class="media-type-tabs" role="tablist">
+                        <button type="button" class="media-tab-btn active" data-media="all" id="tab-foto" role="tab" aria-selected="true">
+                            <span class="material-symbols-outlined">photo_camera</span>
+                            <span>Foto</span>
+                        </button>
+                        <button type="button" class="media-tab-btn" data-media="video" id="tab-video" role="tab" aria-selected="false">
+                            <span class="material-symbols-outlined">smart_display</span>
+                            <span>Video</span>
+                        </button>
+                    </div>
+
+                    <!-- Right: Category Filter Pills -->
+                    <div class="category-pills-group" role="group" aria-label="Filter Kategori Visual">
+                        <button type="button" class="cat-pill-btn active" data-cat="all">Semua</button>
+                        <button type="button" class="cat-pill-btn" data-cat="alam">Alam</button>
+                        <button type="button" class="cat-pill-btn" data-cat="fasilitas">Fasilitas</button>
+                        <button type="button" class="cat-pill-btn" data-cat="aktivitas">Aktivitas</button>
+                        <button type="button" class="cat-pill-btn" data-cat="lainnya">Lainnya</button>
+                    </div>
+                </div>
+
+                <!-- Visual Items Grid (4 Cols x 5 Rows = 20 Items) -->
+                <div class="visual-grid-container" id="visual-grid-container">
+
+                    <!-- Row 1 -->
+                    <!-- Item 1: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Air Terjun Utama - Kejernihan Air Curug Cibulao" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 2: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="alam" data-title="Video Panorama Suasana Air Terjun Utama" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 3: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Kondisi Tebing Alami Sekitar Curug" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 4: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="alam" data-title="Video Aliran Debit Air Terjun Curug Cibulao" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video debit air Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Row 2 -->
+                    <!-- Item 5: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Sudut Pandang Bawah Kolam Alami Curug Cibulao" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 6: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="fasilitas" data-title="Bebatuan Alami Tempat Duduk Santai Wisatawan" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 7: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="aktivitas" data-title="Video Wisatawan Berenang Menggunakan Rompi Pelampung" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video aktivitas berenang di Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 8: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Pantulan Cahaya Matahari Pagi di Air Curug" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Row 3 -->
+                    <!-- Item 9: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="alam" data-title="Video Suara Gemercik Air dan Suasana Hutan Damai" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video suasana hutan Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 10: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="fasilitas" data-title="Plang Petunjuk dan Informasi Keselamatan" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 11: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Keindahan Pepohonan Rindang di Atas Air Terjun" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 12: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="fasilitas" data-title="Penyewaan Pelampung Resmi di Sisi Curug" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Row 4 -->
+                    <!-- Item 13: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Tampak Penuh Air Terjun Curug Cibulao Tingkat Atas" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 14: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="aktivitas" data-title="Trekking Santai Menuju Titik Air Terjun" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 15: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="fasilitas" data-title="Gazebo dan Warung Makanan Hangat di Area Wisata" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 16: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="alam" data-title="Video Drone Pemandangan Lanskap Curug Cibulao" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video drone Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Row 5 -->
+                    <!-- Item 17: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="aktivitas" data-title="Video Panduan Keselamatan oleh Ranger Setempat" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video ranger Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 18: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Kondisi Air Bersih dan Segar Pegunungan Cisarua" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 19: Video -->
+                    <article class="visual-item-card" data-type="video" data-cat="alam" data-title="Video Eksplorasi Jalur Tepi Sungai Curug Cibulao" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Video jalur sungai Curug Cibulao" class="visual-card-thumb">
+                        <div class="video-play-indicator">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </div>
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 20: Photo -->
+                    <article class="visual-item-card" data-type="photo" data-cat="alam" data-title="Pemandangan Senja Alami di Sekitar Kawasan Curug" tabindex="0">
+                        <img src="assets/images/detail_visual/list_visual.png" alt="Air terjun utama Curug Cibulao" class="visual-card-thumb">
+                        <div class="visual-type-badge">
+                            <span class="material-symbols-outlined">image</span>
+                            <span>Air terjun utama</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Pagination Bar -->
+                <div class="visual-pagination-bar">
+                    <div class="media-total-count">
+                        <span class="material-symbols-outlined media-count-icon">image</span>
+                        <span class="media-count-text">60 foto dan 20 video</span>
+                    </div>
+
+                    <nav class="visual-pagination" aria-label="Navigasi Halaman Galeri">
+                        <button type="button" class="btn-page-arrow prev-page" aria-label="Halaman Sebelumnya" disabled>
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button type="button" class="btn-page-num active" aria-current="page">1</button>
+                        <button type="button" class="btn-page-num">2</button>
+                        <button type="button" class="btn-page-num">3</button>
+                        <button type="button" class="btn-page-num">4</button>
+                        <button type="button" class="btn-page-arrow next-page" aria-label="Halaman Berikutnya">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </nav>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- 3. Banner Bawah Section -->
+        <section class="bottom-banner-section" aria-label="Banner Pemandangan">
+            <img src="assets/images/detail_visual/banner_bawah.png" alt="Pemandangan pegunungan dan hutan pinus Bogor" class="bottom-banner-img">
+        </section>
+
+    </main>
+
+    <!-- ===== 4. FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand Info -->
+                <div class="footer-brand">
+                    <img src="assets/images/detail_visual/logo_eksplotrip_footer.png" alt="EksploTrip" class="footer-logo">
+                    <p class="footer-desc">
+                        EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.
+                    </p>
+                </div>
+
+                <!-- Column 2: Eksplorasi -->
+                <div class="footer-col">
+                    <h3 class="footer-column-title">Eksplorasi</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Dukungan -->
+                <div class="footer-col">
+                    <h3 class="footer-column-title">Dukungan</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Tetap Terhubung -->
+                <div class="footer-col">
+                    <h3 class="footer-column-title">Tetap Terhubung</h3>
+                    <p class="footer-connect-desc">
+                        Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.
+                    </p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright">&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</p>
+        </div>
+    </footer>
+
+    <!-- ===== 5. LIGHTBOX MODAL PREVIEW ===== -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="lightbox-content-box">
+            <button type="button" class="btn-close-lightbox" id="btn-close-lightbox" aria-label="Tutup Preview">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="lightbox-media-wrapper">
+                <img src="assets/images/detail_visual/list_visual.png" alt="Preview Visual" id="lightbox-img">
+            </div>
+            <div class="lightbox-info-bar">
+                <div>
+                    <h3 class="lightbox-title" id="lightbox-title">Air Terjun Utama Curug Cibulao</h3>
+                    <p class="lightbox-subtitle" id="lightbox-subtitle">Dokumentasi Real-time Lapangan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT LOGIC ===== -->
+    <script src="detail_visual.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinasi Tidak Ditemukan - EksploTrip</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Search Error Stylesheet -->
+    <link rel="stylesheet" href="search_error.css">
+</head>
+<body>
+
+    <!-- ===== 1. HEADER & NAVIGATION ===== -->
+    <header class="navbar" role="banner">
+        <div class="navbar-container">
+            <a href="beranda.html" class="navbar-brand" aria-label="EksploTrip Beranda">
+                <img src="assets/images/search_error/logo_eksplotrip_navbar.png" alt="EksploTrip Logo" class="navbar-logo">
+            </a>
+
+            <nav class="navbar-menu" aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li class="nav-item active"><a href="beranda.html" aria-current="page">Beranda</a></li>
+                    <li class="nav-item"><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                    <li class="nav-item"><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <form action="search_success.html" method="get" role="search" class="search-form">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input type="search" name="q" placeholder="Cari destinasi..." aria-label="Cari destinasi" class="search-input">
+                </form>
+
+                <button type="button" aria-label="Tanya AI EksploTrip" class="ai-button">
+                    <img src="assets/images/search_error/logo_aiplo.png" alt="AI Bot EksploTrip" class="ai-logo">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== 2. MAIN CONTENT ===== -->
+    <main>
+
+        <!-- Hasil Pencarian: Tidak Ditemukan -->
+        <section class="search-error-section" aria-labelledby="error-heading">
+            <div class="error-illustration-wrap">
+                <img src="assets/images/search_error/tidak_ditemukan.png" alt="Ilustrasi papan penunjuk dengan tanda tanya" class="error-illustration-img">
+            </div>
+
+            <h1 class="error-title" id="error-heading">Destinasi Tidak Ditemukan</h1>
+            <p class="error-desc">Maaf, kami belum menemukan destinasi yang sesuai dengan pencarianmu. Coba periksa kembali kata kunci, gunakan kategori yang berbeda, atau gunakan filter.</p>
+
+            <!-- Tips Pencarian Card -->
+            <aside class="search-tips-card" aria-labelledby="tips-heading">
+                <div class="tips-icon-circle" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18h6" />
+                        <path d="M10 21h4" />
+                        <path d="M12 2v1.5" />
+                        <path d="M4.93 4.93l1.06 1.06" />
+                        <path d="M2 12h1.5" />
+                        <path d="M20.5 12H22" />
+                        <path d="M19.07 4.93l-1.06 1.06" />
+                        <path d="M15.54 14.46A5 5 0 1 0 8.46 14.46c.57.54.96 1.24 1.04 2.04h5c.08-.8.47-1.5 1.04-2.04Z" />
+                        <circle cx="12" cy="11" r="1.2" fill="currentColor" stroke="none" />
+                    </svg>
+                </div>
+                <div class="tips-content">
+                    <h2 class="tips-title" id="tips-heading">Tips Pencarian:</h2>
+                    <ul class="tips-list">
+                        <li>Pastikan nama destinasi sudah benar (contoh: Curug Cibulao)</li>
+                        <li>Coba gunakan kata kunci yang lebih umum</li>
+                        <li>Gunakan filter untuk mempersempit hasil</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Action Buttons -->
+            <div class="error-actions">
+                <a href="eksplorasi_destinasi.html" class="btn-reset-search">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                    <span>Reset Pencarian</span>
+                </a>
+                <a href="beranda.html" class="btn-back-home">Kembali</a>
+            </div>
+        </section>
+
+        <!-- Banner Bawah -->
+        <section class="banner-bottom-section" aria-label="Banner Pemandangan">
+            <div class="banner-bottom-wrapper">
+                <img src="assets/images/search_error/banner_bawah.png" alt="Pemandangan pegunungan berkabut" class="banner-bottom-img">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 3. FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/images/search_error/logo_eksplotrip_footer.png" alt="EksploTrip Logo" class="footer-logo">
+                    <p class="footer-brand-desc">EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.</p>
+                </div>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Eksplorasi">
+                    <h4 class="footer-col-title">Eksplorasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Dukungan">
+                    <h4 class="footer-col-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Tetap Terhubung</h4>
+                    <p class="footer-social-desc">Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.</p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright"><small>&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</small></p>
+        </div>
+    </footer>
+
+</body>
+</html>
