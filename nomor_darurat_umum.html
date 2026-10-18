@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor Darurat Umum - EksploTrip</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Nomor Darurat Umum Stylesheet -->
+    <link rel="stylesheet" href="nomor_darurat_umum.css">
+</head>
+<body>
+
+    <!-- ===== 1. HEADER & NAVIGATION ===== -->
+    <header class="navbar" role="banner">
+        <div class="navbar-container">
+            <a href="beranda.html" class="navbar-brand" aria-label="EksploTrip Beranda">
+                <img src="assets/images/nomor_darurat_umum/logo_eksplotrip_navbar.png" alt="EksploTrip Logo" class="navbar-logo">
+            </a>
+
+            <nav class="navbar-menu" aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="beranda.html">Beranda</a></li>
+                    <li class="nav-item"><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                    <li class="nav-item active"><a href="bantuan_darurat.html" aria-current="page">Bantuan Darurat</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <a href="bantuan_darurat.html" class="btn-back-nav" aria-label="Kembali ke Bantuan Darurat">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Kembali</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== 2. MAIN CONTENT ===== -->
+    <main>
+
+        <!-- Hero Banner -->
+        <section class="hero-section" aria-label="Banner Bantuan Darurat">
+            <div class="hero-bg-wrapper">
+                <img src="assets/images/nomor_darurat_umum/banner_atas.png" alt="Pemandangan danau dan gunung di Bogor" class="hero-banner-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="material-symbols-outlined">eco</span>
+                    <span>Butuh Bantuan?</span>
+                </div>
+                <h1 class="hero-title">Jangan Panik, Kami<br>Siap <strong>Membantu</strong></h1>
+                <p class="hero-desc">Jika kamu mengalami keadaan darurat, membutuhkan informasi penting, atau menghadapi kendala saat berwisata, berikut langkah mudah dan panduan yang bisa kamu ikuti.</p>
+            </div>
+        </section>
+
+        <!-- Nomor Darurat Umum Section -->
+        <section class="emergency-numbers-section" aria-labelledby="emergency-section-title">
+            <div class="emergency-header-row">
+                <div class="emergency-header-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">call</span>
+                </div>
+                <div class="emergency-header-text">
+                    <h2 class="emergency-main-title" id="emergency-section-title">Nomor Darurat Umum</h2>
+                    <p class="emergency-sub-title">Pihak berwenang, layanan kesehatan, dan instansi terkait yang dapat dihubungi saat terjadi keadaan darurat atau membutuhkan bantuan.</p>
+                </div>
+            </div>
+
+            <div class="emergency-cards-grid">
+
+                <!-- Card 1: Polisi -->
+                <article class="emergency-card">
+                    <div class="emergency-card-top">
+                        <div class="emergency-icon-circle icon-yellow" aria-hidden="true">
+                            <span class="material-symbols-outlined">local_police</span>
+                        </div>
+                        <div class="emergency-card-info">
+                            <h3 class="emergency-card-title">Polisi</h3>
+                            <p class="emergency-card-number"><a href="tel:110">110</a></p>
+                        </div>
+                    </div>
+                    <div class="emergency-card-bottom">
+                        <p class="emergency-card-desc">Layanan kepolisian untuk keamanan, kejahatan, dan bantuan darurat lainnya.</p>
+                        <button type="button" class="btn-copy-emergency" data-copy="110" aria-label="Salin nomor Polisi 110">
+                            <span class="material-symbols-outlined">file_copy</span>
+                            <span class="copy-label">Salin</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Card 2: Pemadam Kebakaran -->
+                <article class="emergency-card">
+                    <div class="emergency-card-top">
+                        <div class="emergency-icon-circle icon-teal" aria-hidden="true">
+                            <span class="material-symbols-outlined icon-filled">local_fire_department</span>
+                        </div>
+                        <div class="emergency-card-info">
+                            <h3 class="emergency-card-title">Pemadam Kebakaran</h3>
+                            <p class="emergency-card-number"><a href="tel:113">113</a></p>
+                        </div>
+                    </div>
+                    <div class="emergency-card-bottom">
+                        <p class="emergency-card-desc">Layanan pemadam kebakaran untuk kebakaran dan penyelamatan.</p>
+                        <button type="button" class="btn-copy-emergency" data-copy="113" aria-label="Salin nomor Pemadam Kebakaran 113">
+                            <span class="material-symbols-outlined">file_copy</span>
+                            <span class="copy-label">Salin</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Card 3: Ambulans -->
+                <article class="emergency-card">
+                    <div class="emergency-card-top">
+                        <div class="emergency-icon-circle icon-red" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                                <path d="M15 18H9" />
+                                <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                                <circle cx="7" cy="18" r="2" />
+                                <circle cx="17" cy="18" r="2" />
+                                <path d="M8 8v4" />
+                                <path d="M6 10h4" />
+                            </svg>
+                        </div>
+                        <div class="emergency-card-info">
+                            <h3 class="emergency-card-title">Ambulans</h3>
+                            <p class="emergency-card-number"><a href="tel:118">118</a> / <a href="tel:119">119</a></p>
+                        </div>
+                    </div>
+                    <div class="emergency-card-bottom">
+                        <p class="emergency-card-desc">Layanan medis darurat untuk kondisi kesehatan serius.</p>
+                        <button type="button" class="btn-copy-emergency" data-copy="118" aria-label="Salin nomor Ambulans 118">
+                            <span class="material-symbols-outlined">file_copy</span>
+                            <span class="copy-label">Salin</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Card 4: Taman Nasional G. Gede -->
+                <article class="emergency-card">
+                    <div class="emergency-card-top">
+                        <div class="emergency-icon-circle icon-green" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 18.5L9.5 6L13 12.2L16 8.5L20 18.5H4Z" />
+                            </svg>
+                        </div>
+                        <div class="emergency-card-info">
+                            <h3 class="emergency-card-title">Taman Nasional G. Gede</h3>
+                            <p class="emergency-card-number"><a href="tel:08119155815">0811-9155-815</a></p>
+                        </div>
+                    </div>
+                    <div class="emergency-card-bottom">
+                        <p class="emergency-card-desc">Bantuan dan informasi terkait kawasan konservasi dan keamanan area alam.</p>
+                        <button type="button" class="btn-copy-emergency" data-copy="0811-9155-815" aria-label="Salin nomor Taman Nasional Gunung Gede">
+                            <span class="material-symbols-outlined">file_copy</span>
+                            <span class="copy-label">Salin</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Card 5: SAR/ Basarnas -->
+                <article class="emergency-card">
+                    <div class="emergency-card-top">
+                        <div class="emergency-icon-circle icon-orange" aria-hidden="true">
+                            <span class="material-symbols-outlined">person_search</span>
+                        </div>
+                        <div class="emergency-card-info">
+                            <h3 class="emergency-card-title">SAR/ Basarnas</h3>
+                            <p class="emergency-card-number"><a href="tel:115">115</a></p>
+                        </div>
+                    </div>
+                    <div class="emergency-card-bottom">
+                        <p class="emergency-card-desc">Layanan pencarian dan pertolongan kecelakaan, tersesat, dan situasi darurat.</p>
+                        <button type="button" class="btn-copy-emergency" data-copy="115" aria-label="Salin nomor SAR Basarnas 115">
+                            <span class="material-symbols-outlined">file_copy</span>
+                            <span class="copy-label">Salin</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Card 6: Taman Nasional G. Salak -->
+                <article class="emergency-card">
+                    <div class="emergency-card-top">
+                        <div class="emergency-icon-circle icon-cyan" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 18.5L9.5 6L13 12.2L16 8.5L20 18.5H4Z" />
+                            </svg>
+                        </div>
+                        <div class="emergency-card-info">
+                            <h3 class="emergency-card-title">Taman Nasional G. Salak</h3>
+                            <p class="emergency-card-number"><a href="tel:085721888664">0857-2188-8664</a></p>
+                        </div>
+                    </div>
+                    <div class="emergency-card-bottom">
+                        <p class="emergency-card-desc">Bantuan dan informasi terkait kawasan konservasi dan keamanan area alam.</p>
+                        <button type="button" class="btn-copy-emergency" data-copy="0857-2188-8664" aria-label="Salin nomor Taman Nasional Gunung Salak">
+                            <span class="material-symbols-outlined">file_copy</span>
+                            <span class="copy-label">Salin</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Banner Bawah -->
+        <section class="banner-bottom-section" aria-label="Banner Pemandangan">
+            <div class="banner-bottom-wrapper">
+                <img src="assets/images/nomor_darurat_umum/banner_bawah.png" alt="Pemandangan pegunungan berkabut" class="banner-bottom-img">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 3. FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/images/nomor_darurat_umum/logo_eksplotrip_footer.png" alt="EksploTrip Logo" class="footer-logo">
+                    <p class="footer-brand-desc">EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.</p>
+                </div>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Eksplorasi">
+                    <h4 class="footer-col-title">Eksplorasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Dukungan">
+                    <h4 class="footer-col-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Tetap Terhubung</h4>
+                    <p class="footer-social-desc">Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.</p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright"><small>&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</small></p>
+        </div>
+    </footer>
+
+    <!-- ===== 4. INTERACTIVITY SCRIPT (Salin Nomor Darurat) ===== -->
+    <script>
+        (function () {
+            'use strict';
+            const copyButtons = document.querySelectorAll('.btn-copy-emergency');
+
+            copyButtons.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const numToCopy = btn.getAttribute('data-copy');
+                    const labelEl = btn.querySelector('.copy-label');
+                    const iconEl = btn.querySelector('.material-symbols-outlined');
+
+                    if (!numToCopy) return;
+
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(numToCopy).catch(() => {});
+                    }
+
+                    btn.classList.add('copied');
+                    if (labelEl) labelEl.textContent = 'Tersalin';
+                    if (iconEl) iconEl.textContent = 'check';
+
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        if (labelEl) labelEl.textContent = 'Salin';
+                        if (iconEl) iconEl.textContent = 'file_copy';
+                    }, 1800);
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EksploTrip - Eksplorasi Wisata Alam Bogor yang Aman & Transparan</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="stylesheet" href="eksplorasi_destinasi.css">
+    <link rel="stylesheet" href="bantuan_darurat.css">
+</head>
+<body>
+
+    <!-- Header & Navigation (Stationary at Top) -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="beranda.html" class="navbar-brand">
+                <img src="assets/images/beranda/logo_eksplotrip_navbar.png" alt="EksploTrip Logo" class="navbar-logo">
+            </a>
+
+            <nav class="navbar-menu">
+                <ul class="nav-links">
+                    <li class="nav-item active" id="nav-item-beranda"><a href="beranda.html" aria-current="page">Beranda</a></li>
+                    <li class="nav-item" id="nav-item-eksplorasi"><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                    <li class="nav-item" id="nav-item-bantuan"><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    <li class="nav-indicator" aria-hidden="true"></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <form action="search_success.html" method="get" role="search" class="search-form">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input type="search" name="q" placeholder="Cari destinasi..." aria-label="Cari destinasi" class="search-input">
+                </form>
+
+                <button type="button" aria-label="Tanya AI EksploTrip" class="ai-button">
+                    <img src="assets/images/beranda/logo_aiplo.png" alt="AI Bot EksploTrip" class="ai-logo">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Slider Viewport (Entire Content Beneath Stationary Navbar Slides) -->
+    <div class="page-slider-viewport" id="slider-viewport">
+        <div class="page-slider-track" id="slider-track">
+            <!-- View 1: Beranda -->
+            <div class="page-view active-view" id="view-beranda">
+<main>
+
+        <!-- Hero Banner -->
+        <section class="hero-section">
+            <div class="hero-bg-wrapper">
+                <img src="assets/images/beranda/banner_atas.png" alt="Pemandangan danau dan gunung di Bogor" class="hero-banner-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="material-symbols-outlined">eco</span>
+                    <span>Jelajahi Alam, Jaga Bersama</span>
+                </div>
+                <h1 class="hero-title">Eksplorasi Wisata<br>Keindahan Alam di Bogor<br>yang <strong>Aman &amp; Transparan</strong></h1>
+                <p class="hero-desc">Temukan rute resmi, estimasi biaya riil, dan kondisi lapangan curug, danau, serta gunung atau bukit di Bogor tanpa khawatir pungli atau tersesat.</p>
+                <ul class="hero-tags">
+                    <li>#CurugBogor</li>
+                    <li>#DanauIndah</li>
+                    <li>#TrekkingAman</li>
+                    <li>#BebasPungli</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Destinasi Wisata Populer -->
+        <section class="destinations-section">
+            <div class="destinations-header">
+                <div class="destinations-title-group">
+                    <h2 class="destinations-title">Destinasi Wisata Alam Populer di Bogor</h2>
+                    <p class="destinations-subtitle">Eksplorasi berbagai destinasi wisata alam terbaik dengan informasi lengkap dan terverifikasi.</p>
+                </div>
+                <a href="eksplorasi_destinasi.html" class="destinations-view-all">
+                    <span>Lihat Semua Destinasi</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Kartu Destinasi 1 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/beranda/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Curug Cibulao</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 2 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </span>
+                        <img src="assets/images/beranda/list_katalog.png" alt="Situ Tamansari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Situ Tamansari</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Tamansari, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Akses Motor Mudah</li>
+                            <li>Pemandangan Gunung</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Situ Tamansari">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 3 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </span>
+                        <img src="assets/images/beranda/list_katalog.png" alt="Gunung Luhur" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Gunung Luhur</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Sukamakmur, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Sedang</li>
+                            <li>Pemandangan Kota</li>
+                            <li>Ramah Pemula</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Gunung Luhur">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 4 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/beranda/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Curug Cibulao</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 5 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </span>
+                        <img src="assets/images/beranda/list_katalog.png" alt="Situ Tamansari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Situ Tamansari</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Tamansari, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Akses Motor Mudah</li>
+                            <li>Pemandangan Gunung</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Situ Tamansari">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 6 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </span>
+                        <img src="assets/images/beranda/list_katalog.png" alt="Gunung Luhur" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Gunung Luhur</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Sukamakmur, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Sedang</li>
+                            <li>Pemandangan Kota</li>
+                            <li>Ramah Pemula</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Gunung Luhur">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Kenapa Pilih EksploTrip? -->
+        <section class="value-prop-section">
+            <div class="value-prop-card">
+                <div class="value-prop-brand">
+                    <div class="brand-icon-wrapper">
+                        <span class="material-symbols-outlined brand-emblem-icon earth-eco">eco</span>
+                    </div>
+                    <div>
+                        <h2 class="value-prop-title">Kenapa Pilih<br>EksploTrip?</h2>
+                        <p class="value-prop-desc">Karena perjalanan aman berawal dari informasi yang tepat.</p>
+                    </div>
+                </div>
+
+                <div class="value-prop-divider"></div>
+
+                <ul class="value-prop-features">
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-outlined">verified_user</span>
+                        </div>
+                        <h3 class="feature-title">Informasi Terverifikasi</h3>
+                        <p class="feature-desc">Data resmi dari pengelola &amp; komunitas lokal</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-outlined">map</span>
+                        </div>
+                        <h3 class="feature-title">Peta &amp; Rute Aman</h3>
+                        <p class="feature-desc">Bisa diakses offline saat sinyal hilang</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-outlined">calculate</span>
+                        </div>
+                        <h3 class="feature-title">Estimasi Biaya Riil</h3>
+                        <p class="feature-desc">Hindari overbudget dan pungli</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-outlined">groups</span>
+                        </div>
+                        <h3 class="feature-title">Dukungan Komunitas</h3>
+                        <p class="feature-desc">Bersama jaga alam dan wisata yang berkelanjutan</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-btn-wrapper">
+                <a href="eksplorasi_destinasi.html" class="cta-btn">
+                    <span>Cari Destinasi Sekarang</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+            <div class="cta-banner-wrapper">
+                <img src="assets/images/beranda/banner_bawah.png" alt="Pemandangan pegunungan berkabut" class="cta-banner-img">
+            </div>
+        </section>
+
+    </main>
+
+<footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/images/eksplorasi_destinasi/logo_eksplotrip_footer.png" alt="EksploTrip Logo" class="footer-logo">
+                    <p class="footer-brand-desc">EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.</p>
+                </div>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Eksplorasi">
+                    <h4 class="footer-col-title">Eksplorasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Dukungan">
+                    <h4 class="footer-col-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Tetap Terhubung</h4>
+                    <p class="footer-social-desc">Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.</p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright"><small>&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</small></p>
+        </div>
+    </footer>
+            </div>
+
+            <!-- View 2: Eksplorasi Destinasi -->
+            <div class="page-view collapsed-view" id="view-eksplorasi">
+<main>
+
+        <!-- Hero Banner -->
+        <section class="hero-section">
+            <div class="hero-bg-wrapper">
+                <img src="assets/images/eksplorasi_destinasi/banner_atas.png" alt="Pemandangan danau dan gunung di Bogor" class="hero-banner-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="material-symbols-outlined">eco</span>
+                    <span>Eksplorasi Destinasi</span>
+                </div>
+                <h1 class="hero-title">Eksplorasi Wisata<br>Keindahan Alam di Bogor<br>yang <strong>Aman &amp; Transparan</strong></h1>
+                <p class="hero-desc">Temukan berbagai destinasi wisata alam di Bogor, mulai dari curug, danau, hingga jalur bukit trekking. Pilih destinasi favoritmu dan nikmati perjalanan yang lebih aman, nyaman, dan terencana.</p>
+            </div>
+        </section>
+
+        <!-- Filter Destinasi -->
+        <section class="filter-section">
+            <div class="filter-container">
+                <div class="filter-card" role="group" aria-labelledby="filter-type-title">
+                    <div class="filter-title" id="filter-type-title">
+                        <span class="material-symbols-outlined">landscape</span>
+                        <span>Tipe Destinasi</span>
+                    </div>
+                    <div class="filter-buttons" id="type-filter-group">
+                        <button type="button" class="filter-btn active" data-type="all">Semua</button>
+                        <button type="button" class="filter-btn" data-type="curug">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-type="danau">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-type="gunung">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filter-card" role="group" aria-labelledby="filter-condition-title">
+                    <div class="filter-title" id="filter-condition-title">
+                        <span class="material-symbols-outlined">groups</span>
+                        <span>Kondisi &amp; Kebutuhan</span>
+                    </div>
+                    <div class="filter-buttons" id="condition-filter-group">
+                        <button type="button" class="filter-btn active" data-condition="all">Semua</button>
+                        <button type="button" class="filter-btn" data-condition="pemula">
+                            <span class="material-symbols-outlined">footprint</span>
+                            <span>Ramah Pemula</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-condition="keluarga">
+                            <span class="material-symbols-outlined">family_restroom</span>
+                            <span>Ramah Keluarga</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-condition="ekstrem">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Rute Ekstrem</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-condition="parkir">
+                            <span class="material-symbols-outlined">local_parking</span>
+                            <span>Dekat Parkiran</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daftar Destinasi -->
+        <section class="destinations-section" id="katalog-destinasi">
+            <div class="destinations-header">
+                <div class="destinations-title-group">
+                    <h2 class="destinations-title">Daftar Destinasi Wisata Alam di Bogor</h2>
+                    <p class="destinations-subtitle">Eksplorasi berbagai destinasi wisata alam terbaik dengan informasi lengkap dan terverifikasi.</p>
+                </div>
+            </div>
+
+            <div class="cards-grid" id="destinations-grid">
+                <!-- Kartu Destinasi 1 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Curug Cibulao</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 2 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Situ Tamansari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Situ Tamansari</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Tamansari, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Akses Motor Mudah</li>
+                            <li>Pemandangan Gunung</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Situ Tamansari">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 3 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Gunung Luhur" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Gunung Luhur</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Sukamakmur, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trekking Sedang</li>
+                            <li>Pemandangan Kota</li>
+                            <li>Ramah Pemula</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Gunung Luhur">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 4 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Curug Cibulao</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 5 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Situ Tamansari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Situ Tamansari</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Tamansari, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Akses Motor Mudah</li>
+                            <li>Pemandangan Gunung</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Situ Tamansari">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 6 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Gunung Luhur" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Gunung Luhur</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Sukamakmur, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trekking Sedang</li>
+                            <li>Pemandangan Kota</li>
+                            <li>Ramah Pemula</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Gunung Luhur">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 7 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Curug Cibulao</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 8 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Situ Tamansari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Situ Tamansari</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Tamansari, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Akses Motor Mudah</li>
+                            <li>Pemandangan Gunung</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Situ Tamansari">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 9 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Gunung Luhur" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Gunung Luhur</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Sukamakmur, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trekking Sedang</li>
+                            <li>Pemandangan Kota</li>
+                            <li>Ramah Pemula</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Gunung Luhur">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 10 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Curug Cibulao</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 11 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">waves</span>
+                            <span>Situ/Danau</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Situ Tamansari" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Situ Tamansari</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Tamansari, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Akses Motor Mudah</li>
+                            <li>Pemandangan Gunung</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Situ Tamansari">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu Destinasi 12 -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">landscape</span>
+                            <span>Gunung/Bukit</span>
+                        </span>
+                        <img src="assets/images/eksplorasi_destinasi/list_katalog.png" alt="Gunung Luhur" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3 class="card-title">Gunung Luhur</h3>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Sukamakmur, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trekking Sedang</li>
+                            <li>Pemandangan Kota</li>
+                            <li>Ramah Pemula</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Gunung Luhur">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="pagination-nav" aria-label="Navigasi halaman destinasi">
+                <div class="pagination-wrapper">
+                    <button type="button" class="pagi-btn pagi-prev" id="btn-prev" aria-label="Halaman sebelumnya" data-action="prev" disabled aria-disabled="true">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <ul class="pagi-numbers" id="pagi-numbers">
+                        <li><button type="button" class="pagi-num active" data-page="1" aria-current="page">1</button></li>
+                        <li><button type="button" class="pagi-num" data-page="2">2</button></li>
+                        <li><button type="button" class="pagi-num" data-page="3">3</button></li>
+                        <li><button type="button" class="pagi-num" data-page="4">4</button></li>
+                    </ul>
+                    <button type="button" class="pagi-btn pagi-next" id="btn-next" aria-label="Halaman berikutnya" data-action="next">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Banner Bawah -->
+        <section class="banner-bottom-section">
+            <div class="banner-bottom-wrapper">
+                <img src="assets/images/eksplorasi_destinasi/banner_bawah.png" alt="Pemandangan pegunungan berkabut" class="banner-bottom-img">
+            </div>
+        </section>
+
+    </main>
+
+<footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/images/eksplorasi_destinasi/logo_eksplotrip_footer.png" alt="EksploTrip Logo" class="footer-logo">
+                    <p class="footer-brand-desc">EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.</p>
+                </div>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Eksplorasi">
+                    <h4 class="footer-col-title">Eksplorasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Dukungan">
+                    <h4 class="footer-col-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Tetap Terhubung</h4>
+                    <p class="footer-social-desc">Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.</p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright"><small>&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</small></p>
+        </div>
+    </footer>
+            </div>
+
+            <!-- View 3: Bantuan Darurat -->
+            <div class="page-view collapsed-view" id="view-bantuan">
+<main>
+
+        <!-- Hero Banner -->
+        <section class="hero-section">
+            <div class="hero-bg-wrapper">
+                <img src="assets/images/bantuan_darurat/banner_atas.png" alt="Pemandangan danau dan gunung di Bogor" class="hero-banner-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="material-symbols-outlined">eco</span>
+                    <span>Bantuan Darurat</span>
+                </div>
+                <h1 class="hero-title">Jangan Panik, Kami<br>Siap <strong>Membantu</strong></h1>
+                <p class="hero-desc">Jika kamu mengalami keadaan darurat, membutuhkan informasi penting, atau menghadapi kendala saat berwisata, berikut langkah mudah dan panduan yang bisa kamu ikuti.</p>
+            </div>
+        </section>
+
+        <!-- Section 1: Tips Saat Keadaan Darurat -->
+        <section class="emergency-steps-section">
+            <div class="section-header-row">
+                <div class="header-icon-box">
+                    <span class="material-symbols-outlined">add</span>
+                </div>
+                <div class="header-text-group">
+                    <h2 class="section-main-title">Tips Saat Keadaan Darurat</h2>
+                    <p class="section-sub-title">Tetap tenang, ikuti langkah berikut untuk mendapatkan bantuan dengan cepat.</p>
+                </div>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <article class="step-card">
+                    <span class="step-num-badge">1</span>
+                    <div class="step-icon-wrap">
+                        <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <h3 class="step-title">Hubungi Nomor Darurat</h3>
+                    <p class="step-desc">Segera hubungi nomor darurat terdekat.</p>
+                </article>
+
+                <!-- Step 2 -->
+                <article class="step-card">
+                    <span class="step-num-badge">2</span>
+                    <div class="step-icon-wrap">
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <h3 class="step-title">Sampaikan Lokasi</h3>
+                    <p class="step-desc">Berikan informasi lokasi yang jelas dan detail.</p>
+                </article>
+
+                <!-- Step 3 -->
+                <article class="step-card">
+                    <span class="step-num-badge">3</span>
+                    <div class="step-icon-wrap">
+                        <span class="material-symbols-outlined">description</span>
+                    </div>
+                    <h3 class="step-title">Jelaskan Kondisi</h3>
+                    <p class="step-desc">Sampaikan jenis bantuan yang dibutuhkan.</p>
+                </article>
+
+                <!-- Step 4 -->
+                <article class="step-card">
+                    <span class="step-num-badge">4</span>
+                    <div class="step-icon-wrap">
+                        <span class="material-symbols-outlined">schedule</span>
+                    </div>
+                    <h3 class="step-title">Tunggu Konfirmasi</h3>
+                    <p class="step-desc">Jangan meninggalkan lokasi sebelum ada konfirmasi bantuan.</p>
+                </article>
+
+                <!-- Step 5 -->
+                <article class="step-card">
+                    <span class="step-num-badge">5</span>
+                    <div class="step-icon-wrap">
+                        <span class="material-symbols-outlined">volunteer_activism</span>
+                    </div>
+                    <h3 class="step-title">Tetap Tenang</h3>
+                    <p class="step-desc">Ikuti arahan petugas dan jaga keselamatan diri serta sekitar.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2: Tips Keselamatan di Alam -->
+        <section class="safety-tips-section">
+            <div class="safety-card-container">
+                <!-- Left Column: Content -->
+                    <div class="safety-left-content">
+                        <div class="section-header-row">
+                            <div class="header-icon-circle">
+                                <span class="material-symbols-outlined">explore</span>
+                            </div>
+                            <div class="header-text-group">
+                                <h2 class="section-main-title">Tips Keselamatan di Alam</h2>
+                                <p class="section-sub-title">Persiapan yang baik, perjalanan yang lebih aman.</p>
+                            </div>
+                        </div>
+
+                        <div class="safety-items-row">
+                            <div class="safety-item">
+                                <div class="safety-item-icon">
+                                    <span class="material-symbols-outlined">backpack</span>
+                                </div>
+                                <p class="safety-item-text">Gunakan perlengkapan yang sesuai.</p>
+                            </div>
+
+                            <div class="safety-divider"></div>
+
+                            <div class="safety-item">
+                                <div class="safety-item-icon">
+                                    <span class="material-symbols-outlined">water_bottle</span>
+                                </div>
+                                <p class="safety-item-text">Bawa air minum dan makanan secukupnya.</p>
+                            </div>
+
+                            <div class="safety-divider"></div>
+
+                            <div class="safety-item">
+                                <div class="safety-item-icon">
+                                    <span class="material-symbols-outlined">smartphone</span>
+                                </div>
+                                <p class="safety-item-text">Pastikan baterai HP penuh dan aktifkan mode offline.</p>
+                            </div>
+
+                            <div class="safety-divider"></div>
+
+                            <div class="safety-item">
+                                <div class="safety-item-icon">
+                                    <span class="material-symbols-outlined">checkroom</span>
+                                </div>
+                                <p class="safety-item-text">Gunakan pakaian dan alas kaki yang nyaman.</p>
+                            </div>
+
+                            <div class="safety-divider"></div>
+
+                            <div class="safety-item">
+                                <div class="safety-item-icon">
+                                    <span class="material-symbols-outlined">groups</span>
+                                </div>
+                                <p class="safety-item-text">Jangan berwisata sendirian, utamakan kebersamaan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Visual Image -->
+                    <div class="safety-image-wrap">
+                        <img src="assets/images/bantuan_darurat/tips_keselamatan.png" alt="Tas carrier di puncak bukit pemandangan alam" class="safety-img">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Informasi Bantuan Cepat -->
+        <section class="quick-help-section">
+            <div class="quick-help-container">
+                <div class="section-header-row">
+                    <div class="header-icon-circle">
+                        <span class="material-symbols-outlined">health_and_safety</span>
+                    </div>
+                    <div class="header-text-group">
+                        <h2 class="section-main-title">Informasi Bantuan Cepat</h2>
+                        <p class="section-sub-title">Akses informasi penting yang mungkin kamu butuhkan selama perjalanan.</p>
+                    </div>
+                </div>
+
+                <div class="help-grid">
+                    <!-- Card 1 -->
+                    <a href="nomor_darurat_umum.html" class="help-card" aria-label="Lihat Nomor Darurat Umum">
+                        <div class="help-card-top">
+                            <div class="help-card-icon icon-red">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="help-card-title">Nomor Darurat Umum</h3>
+                            <p class="help-card-desc">Polisi, Ambulans, Pemadam Kebakaran, dan layanan darurat lainnya</p>
+                        </div>
+                        <span class="help-card-action">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="javascript:void(0)" class="help-card" aria-label="Lihat Fasilitas Kesehatan Terdekat">
+                        <div class="help-card-top">
+                            <div class="help-card-icon icon-green">
+                                <span class="material-symbols-outlined">local_hospital</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="help-card-title">Fasilitas Kesehatan Terdekat</h3>
+                            <p class="help-card-desc">Puskesmas, klinik, dan rumah sakit terdekat di sekitar area wisata</p>
+                        </div>
+                        <span class="help-card-action">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="javascript:void(0)" class="help-card" aria-label="Lihat Informasi Cuaca">
+                        <div class="help-card-top">
+                            <div class="help-card-icon icon-blue">
+                                <span class="material-symbols-outlined">air</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="help-card-title">Informasi Cuaca</h3>
+                            <p class="help-card-desc">Cek kondisi cuaca terkini dan peringatan dini sebelum berangkat</p>
+                        </div>
+                        <span class="help-card-action">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="javascript:void(0)" class="help-card" aria-label="Lihat Tips Keamanan Wanita">
+                        <div class="help-card-top">
+                            <div class="help-card-icon icon-orange">
+                                <span class="material-symbols-outlined">female</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="help-card-title">Tips Keamanan Wanita</h3>
+                            <p class="help-card-desc">Hal-hal yang perlu diperhatikan selama berwisata di alam.</p>
+                        </div>
+                        <span class="help-card-action">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="javascript:void(0)" class="help-card" aria-label="Lihat Edukasi dan Pencegahan">
+                        <div class="help-card-top">
+                            <div class="help-card-icon icon-orange">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="help-card-title">Edukasi dan Pencegahan</h3>
+                            <p class="help-card-desc">Kenali potensi bahaya, cara menghindari pungli dan tips keselamatan lainnya.</p>
+                        </div>
+                        <span class="help-card-action">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a href="javascript:void(0)" class="help-card" aria-label="Hubungi Tim Kami">
+                        <div class="help-card-top">
+                            <div class="help-card-icon icon-darkgreen">
+                                <span class="material-symbols-outlined">chat</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="help-card-title">Hubungi Tim Kami</h3>
+                            <p class="help-card-desc">Untuk pertanyaan, saran, atau informasi tambahan.</p>
+                        </div>
+                        <span class="help-card-action">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Pertanyaan yang Sering Ditanyakan (FAQ) -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="section-header-row">
+                    <div class="header-icon-circle">
+                        <span class="material-symbols-outlined">help</span>
+                    </div>
+                    <div class="header-text-group">
+                        <h2 class="section-main-title">Pertanyaan yang Sering Ditanyakan</h2>
+                        <p class="section-sub-title">Temukan jawaban dari pertanyaan umum seputar bantuan darurat dan keamanan wisata.</p>
+                    </div>
+                </div>
+
+                <div class="faq-grid">
+                    <!-- Left Column -->
+                    <div class="faq-column">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Apa yang harus dilakukan jika tersesat di jalur pendakian?</span>
+                                <button type="button" class="faq-toggle-btn" aria-label="Buka jawaban">
+                                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Tetap tenang dan berhenti di tempat yang aman. Hubungi nomor darurat 112 atau Basarnas 115, kirimkan koordinat lokasi terakhirmu jika ada sinyal, dan hemat daya baterai ponselmu.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item" style="margin-top: 16px;">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Bagaimana cara melaporkan adanya pungli?</span>
+                                <button type="button" class="faq-toggle-btn" aria-label="Buka jawaban">
+                                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Catat waktu, lokasi, dan bukti kejadian (foto/video/tiket tidak resmi), lalu laporkan ke pihak pengelola resmi destinasi atau melalui kanal pengaduan resmi LAPOR! (lapor.go.id).</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item" style="margin-top: 16px;">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Apakah ada asuransi wisata di setiap destinasi?</span>
+                                <button type="button" class="faq-toggle-btn" aria-label="Buka jawaban">
+                                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sebagian besar destinasi wisata alam resmi sudah mencakup asuransi pada tiket masuk resmi. Pastikan selalu meminta karcis retribusi resmi di pintu masuk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="faq-column">
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Bagaimana jika mengalami cedera saat berwisata?</span>
+                                <button type="button" class="faq-toggle-btn" aria-label="Buka jawaban">
+                                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Lakukan pertolongan pertama (P3K) sesegera mungkin, jangan memaksakan bergerak bila mengalami dislokasi/patah tulang, dan segera hubungi petugas pos jaga terdekat atau ambulans 119.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item" style="margin-top: 16px;">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Apakah ada layanan evakuasi di area wisata?</span>
+                                <button type="button" class="faq-toggle-btn" aria-label="Buka jawaban">
+                                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Destinasi pendakian gunung dan curug di Bogor umumnya memiliki posko SAR lokal dan pengelola ranger. Dalam kondisi darurat berat, tim gabungan Basarnas akan dikerahkan.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item" style="margin-top: 16px;">
+                            <div class="faq-question">
+                                <span class="faq-question-text">Dimana saya bisa mendapatkan informasi cuaca terkini?</span>
+                                <button type="button" class="faq-toggle-btn" aria-label="Buka jawaban">
+                                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Informasi cuaca terkini dan radar hujan real-time di kawasan Bogor dapat diakses langsung melalui portal resmi BMKG (bmkg.go.id) atau aplikasi Info BMKG.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Bawah -->
+        <section class="banner-bottom-section">
+            <div class="banner-bottom-wrapper">
+                <img src="assets/images/bantuan_darurat/banner_bawah.png" alt="Pemandangan pegunungan berkabut" class="banner-bottom-img">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/images/bantuan_darurat/logo_eksplotrip_footer.png" alt="EksploTrip Logo" class="footer-logo">
+                    <p class="footer-brand-desc">EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.</p>
+                </div>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Eksplorasi">
+                    <h4 class="footer-col-title">Eksplorasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Dukungan">
+                    <h4 class="footer-col-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Tetap Terhubung</h4>
+                    <p class="footer-social-desc">Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.</p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright"><small>&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</small></p>
+        </div>
+    </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: Smooth Page Slider & Interactive Catalog Database -->
+    <script src="navbar_transitions.js"></script>
+    <script src="eksplorasi.js"></script>
+</body>
+</html>

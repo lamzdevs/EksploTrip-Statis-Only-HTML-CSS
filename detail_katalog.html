@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curug Cibulao, Cisarua - Detail Destinasi - EksploTrip</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="detail_katalog.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="detail-navbar">
+        <div class="detail-navbar-container">
+            <a href="beranda.html" class="navbar-brand">
+                <img src="assets/images/detail_katalog/logo_eksplotrip_navbar.png" alt="EksploTrip Logo" class="navbar-brand-logo">
+            </a>
+
+            <a href="eksplorasi_destinasi.html" class="btn-back-nav" id="btn-back-nav">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Kembali</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- 1. Hero Banner Section -->
+        <section class="hero-detail-section">
+            <div class="hero-detail-bg">
+                <img src="assets/images/detail_katalog/banner_atas.png" alt="Curug Cibulao Cisarua" class="hero-detail-img">
+                <div class="hero-detail-overlay"></div>
+            </div>
+
+            <div class="hero-detail-content">
+                <div class="hero-verified-badge">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span>Destinasi Terverifikasi</span>
+                </div>
+
+                <h1 class="hero-detail-title">
+                    Curug Cibulao,
+                    <span class="highlight-cisarua">Cisarua</span>
+                </h1>
+
+                <p class="hero-detail-desc">
+                    Curug Cibulao adalah salah satu destinasi wisata alam yang populer di Kecamatan Cisarua, Bogor. Dengan akses yang mudah, jalur landai, dan suasana alam yang sejuk, tempat ini cocok untuk dikunjungi bersama keluarga maupun pemula yang ingin menikmati keindahan air terjun.
+                </p>
+
+                <div class="hero-tags-row">
+                    <span class="hero-tag-pill">Trek Landai</span>
+                    <span class="hero-tag-pill">Alam Asri</span>
+                    <span class="hero-tag-pill">Ramah Keluarga</span>
+                </div>
+
+                <div class="hero-meta-row">
+                    <div class="hero-meta-item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <span>Cisarua, Bogor</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <span class="material-symbols-outlined">landscape</span>
+                        <span>+ 789 Mdpl</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <span class="material-symbols-outlined">hiking</span>
+                        <span>+ 10 Menit Dari Parkiran</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Cards Layout -->
+        <div class="detail-main-layout">
+
+            <!-- 2. Ringkasan Destinasi (Overview Strip) -->
+            <section class="destination-overview-card" aria-label="Ringkasan Destinasi">
+                <div class="overview-item">
+                    <div class="overview-icon">
+                        <span class="material-symbols-outlined">water_drop</span>
+                    </div>
+                    <div>
+                        <h2 class="overview-info-title">Tipe Destinasi</h2>
+                        <p class="overview-info-desc">Curug / Air Terjun</p>
+                    </div>
+                </div>
+
+                <div class="overview-divider" aria-hidden="true"></div>
+
+                <div class="overview-item">
+                    <div class="overview-icon">
+                        <span class="material-symbols-outlined">hiking</span>
+                    </div>
+                    <div>
+                        <h2 class="overview-info-title">Kondisi Rute</h2>
+                        <p class="overview-info-desc">Trek Landai<br>Ramah Pemula</p>
+                    </div>
+                </div>
+
+                <div class="overview-divider" aria-hidden="true"></div>
+
+                <div class="overview-item">
+                    <div class="overview-icon">
+                        <span class="material-symbols-outlined">verified_user</span>
+                    </div>
+                    <div>
+                        <h2 class="overview-info-title">Fitur Utama</h2>
+                        <p class="overview-info-desc">Aman dari Pungli<br>Area Parkir Resmi</p>
+                    </div>
+                </div>
+
+                <div class="overview-divider" aria-hidden="true"></div>
+
+                <div class="overview-item">
+                    <div class="overview-icon">
+                        <span class="material-symbols-outlined">eco</span>
+                    </div>
+                    <div>
+                        <h2 class="overview-info-title">Nikmati Alamnya</h2>
+                        <p class="overview-info-desc">Hargai Aturannya</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Grid Row 1: Kalkulator Biaya & Katalog Visual -->
+            <section class="grid-row-equal">
+
+                <!-- 3A. Kalkulator Biaya End-to-End -->
+                <article class="calculator-card">
+                    <div class="card-section-header">
+                        <div class="header-left-group">
+                            <div class="header-icon-box">
+                                <span class="material-symbols-outlined">calculate</span>
+                            </div>
+                            <div>
+                                <h2 class="card-title">Kalkulator Biaya End-to-End</h2>
+                                <p class="card-subtitle">Simulasikan total biaya perjalanan sebelum berangkat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="cost-calculator-form" onsubmit="return false;">
+                        <div class="calc-stepper-row">
+                            <!-- Box Tiket Masuk -->
+                            <div class="calc-item-box">
+                                <span class="calc-item-title">Tiket Masuk</span>
+                                <span class="calc-item-price">Rp. 28.000</span>
+                                <span class="calc-item-badge">+ Pelampung</span>
+                                <span class="calc-item-sub">(Tiket Weekend)</span>
+
+                                <div class="calc-stepper">
+                                    <button type="button" class="btn-step" id="btn-dec-ticket" aria-label="Kurangi jumlah tiket">&minus;</button>
+                                    <input type="number" id="input-ticket-qty" class="step-input" value="1" min="1" max="99" aria-label="Jumlah tiket pengunjung">
+                                    <button type="button" class="btn-step" id="btn-inc-ticket" aria-label="Tambah jumlah tiket">+</button>
+                                </div>
+                            </div>
+
+                            <!-- Box Parkir -->
+                            <div class="calc-item-box">
+                                <span class="calc-item-title">Parkir</span>
+                                <span class="calc-item-price">Rp. 10.000</span>
+                                <span class="calc-item-sub">(Area Parkir Resmi)</span>
+
+                                <div class="calc-stepper">
+                                    <button type="button" class="btn-step" id="btn-dec-parking" aria-label="Kurangi jumlah kendaraan">&minus;</button>
+                                    <input type="number" id="input-parking-qty" class="step-input" value="1" min="0" max="99" aria-label="Jumlah kendaraan parkir">
+                                    <button type="button" class="btn-step" id="btn-inc-parking" aria-label="Tambah jumlah kendaraan">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Total Box -->
+                        <div class="calc-total-box">
+                            <div class="calc-total-icon">
+                                <span class="material-symbols-outlined">receipt_long</span>
+                            </div>
+                            <div>
+                                <span class="calc-total-title">Total Estimasi Biaya</span>
+                                <div class="calc-total-price" id="calc-total-display">Rp. 38.000</div>
+                            </div>
+                        </div>
+
+                        <!-- Reset / Recalc Button -->
+                        <button type="button" class="btn-recalc" id="btn-recalc">
+                            <span class="material-symbols-outlined">restart_alt</span>
+                            <span>Hitung Ulang</span>
+                        </button>
+                    </form>
+
+                    <div class="calc-disclaimer">
+                        <span class="material-symbols-outlined">info</span>
+                        <span>Harga dapat berubah sewaktu-waktu sesuai kebijakan pengelola.</span>
+                    </div>
+                </article>
+
+                <!-- 3B. Katalog Visual -->
+                <article class="visual-catalog-card">
+                    <div class="card-section-header">
+                        <div class="header-left-group">
+                            <div class="header-icon-box">
+                                <span class="material-symbols-outlined">grid_view</span>
+                            </div>
+                            <div>
+                                <h2 class="card-title">Katalog Visual</h2>
+                                <p class="card-subtitle">Informasi kondisi lapangan secara jujur dan real di lokasi.</p>
+                            </div>
+                        </div>
+
+                        <a href="detail_visual.html" class="btn-see-all-visual">
+                            <span>Lihat Semua Visual</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+
+                    <div class="visual-items-grid">
+                        <!-- Card 1 -->
+                        <div class="visual-card-item">
+                            <div class="visual-thumb-wrapper">
+                                <img src="assets/images/detail_katalog/list_visual_katalog.png" alt="Akses Jalan Curug Cibulao" class="visual-thumb-img">
+                            </div>
+                            <div class="visual-item-info">
+                                <h3 class="visual-item-title">Akses Jalan</h3>
+                                <p class="visual-item-desc">Jalan menuju lokasi sudah baik dan mudah diakses motor/mobil.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="visual-card-item">
+                            <div class="visual-thumb-wrapper">
+                                <img src="assets/images/detail_katalog/list_visual_katalog.png" alt="Area Parkir Curug Cibulao" class="visual-thumb-img">
+                            </div>
+                            <div class="visual-item-info">
+                                <h3 class="visual-item-title">Area Parkir</h3>
+                                <p class="visual-item-desc">Parkir luas, dikelola warga lokal dengan tarif resmi.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="visual-card-item">
+                            <div class="visual-thumb-wrapper">
+                                <img src="assets/images/detail_katalog/list_visual_katalog.png" alt="Fasilitas Sekitar Curug Cibulao" class="visual-thumb-img">
+                            </div>
+                            <div class="visual-item-info">
+                                <h3 class="visual-item-title">Fasilitas Sekitar</h3>
+                                <p class="visual-item-desc">Tersedia warung, mushola, plang untuk foto, dan gazebo.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="visual-card-item">
+                            <div class="visual-thumb-wrapper">
+                                <img src="assets/images/detail_katalog/list_visual_katalog.png" alt="Jalur Trekking Curug Cibulao" class="visual-thumb-img">
+                            </div>
+                            <div class="visual-item-info">
+                                <h3 class="visual-item-title">Jalur Trekking</h3>
+                                <p class="visual-item-desc">Trek landai dengan kondisi jalan yang terawat.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="visual-card-item">
+                            <div class="visual-thumb-wrapper">
+                                <img src="assets/images/detail_katalog/list_visual_katalog.png" alt="Debit Air & Kedalaman Curug Cibulao" class="visual-thumb-img">
+                            </div>
+                            <div class="visual-item-info">
+                                <h3 class="visual-item-title">Debit air &amp; Kedalaman</h3>
+                                <p class="visual-item-desc">Debit air cukup deras, kedalaman sekitar 10 meter (area wajib pelampung).</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="visual-card-item">
+                            <div class="visual-thumb-wrapper">
+                                <img src="assets/images/detail_katalog/list_visual_katalog.png" alt="Toilet & Kamar Bilas Curug Cibulao" class="visual-thumb-img">
+                            </div>
+                            <div class="visual-item-info">
+                                <h3 class="visual-item-title">Toilet &amp; Kamar Bilas</h3>
+                                <p class="visual-item-desc">Kondisi toilet bersih dan tersedia kamar bilas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 4. Grid Row 2: Peta Interaktif (Google Maps) & Indikator Keramaian -->
+            <section class="grid-row-map-crowd">
+
+                <!-- 4A. Peta Interaktif & Status Jalur (Google Maps API Embed) -->
+                <article class="interactive-map-card">
+                    <div class="card-section-header">
+                        <div class="header-left-group">
+                            <div class="header-icon-box">
+                                <span class="material-symbols-outlined">map</span>
+                            </div>
+                            <div>
+                                <h2 class="card-title">Peta Interaktif &amp; Status Jalur</h2>
+                                <p class="card-subtitle">Navigasi rute resmi jika membutuhkan bantuan atau informasi lebih lanjut.</p>
+                            </div>
+                        </div>
+
+                        <div class="map-header-actions">
+                            <button type="button" class="btn-map-action outline" id="btn-toggle-map" title="Ganti antara Google Maps Satelit & Peta Rute Resmi">
+                                <span class="material-symbols-outlined">layers</span>
+                                <span id="toggle-map-label">Peta Rute</span>
+                            </button>
+                            <button type="button" class="btn-map-action teal" id="btn-download-map" title="Unduh panduan rute offline">
+                                <span class="material-symbols-outlined">download</span>
+                                <span>Unduh Peta Offline</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Map Container with Google Maps Embed -->
+                    <div class="map-canvas-container" id="map-container">
+                        <!-- Live Interactive Google Maps (Curug Cibulao Coordinates: -6.6453312, 106.9518232) -->
+                        <iframe 
+                            src="https://maps.google.com/maps?q=-6.6453312,106.9518232+(Camp+ground+Curug+cibulao)&t=k&z=17&ie=UTF8&iwloc=B&output=embed" 
+                            class="google-maps-iframe" 
+                            title="Google Maps Curug Cibulao"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+
+                        <!-- Fallback & Official Trail Map Image -->
+                        <img 
+                            src="assets/images/detail_katalog/peta_jalur_cibulao.png" 
+                            alt="Peta Jalur Rute Resmi Curug Cibulao" 
+                            class="static-map-img" 
+                            id="static-map-img">
+
+                        <!-- Floating Official Legend Panel on Left -->
+                        <div class="map-legend-overlay">
+                            <ul class="legend-list">
+                                <li class="legend-item">
+                                    <span class="legend-line-icon" aria-hidden="true"></span>
+                                    <span>Rute resmi</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-p-box" aria-hidden="true">P</span>
+                                    <span>Parkir</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-badge-icon" style="color: #E24438;">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; font-variation-settings: 'FILL' 1;">location_on</span>
+                                    </span>
+                                    <span>Curug Cibulao</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-badge-icon" style="color: #0D6EFD;">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; font-variation-settings: 'FILL' 1;">directions_walk</span>
+                                    </span>
+                                    <span>Pos registrasi</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-badge-icon" style="color: #E6A700;">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; font-variation-settings: 'FILL' 1;">warning</span>
+                                    </span>
+                                    <span>Titik licin (waspada)</span>
+                                </li>
+                                <li class="legend-divider" aria-hidden="true"></li>
+                                <li class="legend-item">
+                                    <span class="legend-badge-icon" style="color: #E24438;">
+                                        <span class="material-symbols-outlined" style="font-size: 16px; font-variation-settings: 'FILL' 1;">report</span>
+                                    </span>
+                                    <div>
+                                        <span>Titik pungli</span>
+                                        <small>(hanya di kotak petunjuk)</small>
+                                    </div>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-badge-icon" style="color: #795548;">
+                                        <span class="material-symbols-outlined" style="font-size: 16px; font-variation-settings: 'FILL' 1;">pets</span>
+                                    </span>
+                                    <div>
+                                        <span>Hewan buas</span>
+                                        <small>(hanya di kotak petunjuk)</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Floating Travel Time Pill on Map -->
+                        <div class="map-time-pill">
+                            <span class="material-symbols-outlined">hiking</span>
+                            <div>
+                                <div class="map-time-text">&plusmn; 30 menit</div>
+                                <div class="map-time-sub">(1,2 km)</div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Link to Google Maps Application -->
+                        <a href="https://maps.app.goo.gl/Z2XsjV4u21iEWBoz7" target="_blank" rel="noopener noreferrer" class="map-direct-link" title="Buka di aplikasi Google Maps">
+                            <span>Buka di Google Maps</span>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4B. Indikator Keramaian -->
+                <article class="crowd-indicator-card">
+                    <div class="card-section-header">
+                        <div class="header-left-group">
+                            <div class="header-icon-box">
+                                <span class="material-symbols-outlined">bar_chart</span>
+                            </div>
+                            <div>
+                                <h2 class="card-title">Indikator Keramaian</h2>
+                                <p class="card-subtitle">Update pantauan kepadatan pengunjung.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gauge Keramaian Box -->
+                    <div class="crowd-gauge-box">
+                        <img src="assets/images/detail_katalog/gauge_keramaian_clean.png" alt="Indikator Keramaian: Sedang (16% - 79%)" class="crowd-gauge-img">
+                    </div>
+
+                    <!-- Best Time to Visit Card -->
+                    <div class="best-time-box">
+                        <div class="best-time-icon">
+                            <span class="material-symbols-outlined">schedule</span>
+                        </div>
+                        <div>
+                            <div class="best-time-label">Waktu terbaik berkunjung</div>
+                            <div class="best-time-val">Sebelum jam 09.00 - 10.00 WIB</div>
+                            <div class="best-time-sub">Untuk melihat antrean dan keramaian.</div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 5. Grid Row 3: Kontak PIC & Bantuan Darurat -->
+            <section class="contact-section-card">
+                <div class="card-section-header">
+                    <div class="header-left-group">
+                        <div class="header-icon-box">
+                            <span class="material-symbols-outlined">contact_phone</span>
+                        </div>
+                        <div>
+                            <h2 class="card-title">Kontak PIC &amp; Bantuan Darurat</h2>
+                            <p class="card-subtitle">Hubungi narahubung resmi jika membutuhkan bantuan atau informasi lebih lanjut.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-grid">
+                    <!-- Contact 1: Pokdarwis -->
+                    <div class="contact-card-item">
+                        <div class="contact-header-row">
+                            <div class="contact-icon-circle green">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3 class="contact-info-title">Pakdarwis Cibulao</h3>
+                                <p class="contact-info-role">Narahubung Resmi</p>
+                            </div>
+                        </div>
+                        <div class="contact-footer-row">
+                            <span class="contact-phone-num">0812-3456-7890</span>
+                            <button type="button" class="btn-copy-contact" data-copy="0812-3456-7890" aria-label="Salin nomor Pakdarwis Cibulao">
+                                <span class="material-symbols-outlined">content_copy</span>
+                                <span>Salin</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact 2: Pos Ranger -->
+                    <div class="contact-card-item">
+                        <div class="contact-header-row">
+                            <div class="contact-icon-circle red">
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+                            </div>
+                            <div>
+                                <h3 class="contact-info-title">Pos Ranger</h3>
+                                <p class="contact-info-role">PJLH / Perhutani</p>
+                            </div>
+                        </div>
+                        <div class="contact-footer-row">
+                            <span class="contact-phone-num">0813-4567-8910</span>
+                            <button type="button" class="btn-copy-contact" data-copy="0813-4567-8910" aria-label="Salin nomor Pos Ranger">
+                                <span class="material-symbols-outlined">content_copy</span>
+                                <span>Salin</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact 3: Darurat -->
+                    <div class="contact-card-item">
+                        <div class="contact-header-row">
+                            <div class="contact-icon-circle orange">
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                            </div>
+                            <div>
+                                <h3 class="contact-info-title">Darurat</h3>
+                                <p class="contact-info-role">(Bebas Pulsa)</p>
+                            </div>
+                        </div>
+                        <div class="contact-footer-row">
+                            <span class="contact-phone-num">Nomor 112</span>
+                            <button type="button" class="btn-copy-contact" data-copy="112" aria-label="Salin nomor darurat 112">
+                                <span class="material-symbols-outlined">content_copy</span>
+                                <span>Salin</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact 4: Pemandu Lokal -->
+                    <div class="contact-card-item">
+                        <div class="contact-header-row">
+                            <div class="contact-icon-circle yellow">
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+                            </div>
+                            <div>
+                                <h3 class="contact-info-title">Pemandu Lokal</h3>
+                                <p class="contact-info-role">Jasa Pemandu Wisata</p>
+                            </div>
+                        </div>
+                        <div class="contact-footer-row">
+                            <span class="contact-phone-num">0821-3344-8900</span>
+                            <button type="button" class="btn-copy-contact" data-copy="0821-3344-8900" aria-label="Salin nomor Pemandu Lokal">
+                                <span class="material-symbols-outlined">content_copy</span>
+                                <span>Salin</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- 6. Banner Bawah -->
+        <section class="bottom-banner-section" aria-label="Banner Pemandangan">
+            <img src="assets/images/detail_katalog/banner_bawah.png" alt="Pemandangan pegunungan dan hutan pinus Bogor" class="bottom-banner-img">
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand Info -->
+                <div class="footer-brand">
+                    <img src="assets/images/detail_katalog/logo_eksplotrip_footer.png" alt="EksploTrip" class="footer-logo">
+                    <p class="footer-desc">
+                        EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.
+                    </p>
+                </div>
+
+                <!-- Column 2: Eksplorasi -->
+                <div class="footer-col">
+                    <h3 class="footer-column-title">Eksplorasi</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Dukungan -->
+                <div class="footer-col">
+                    <h3 class="footer-column-title">Dukungan</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Tetap Terhubung -->
+                <div class="footer-col">
+                    <h3 class="footer-column-title">Tetap Terhubung</h3>
+                    <p class="footer-connect-desc">
+                        Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.
+                    </p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright">&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</p>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT LOGIC ===== -->
+    <script>
+        (function() {
+            'use strict';
+
+            // 1. Back button navigation
+            const btnBackNav = document.getElementById('btn-back-nav');
+            if (btnBackNav) {
+                btnBackNav.addEventListener('click', function(e) {
+                    if (window.history.length > 1) {
+                        e.preventDefault();
+                        window.history.back();
+                    }
+                });
+            }
+
+            // 2. Cost Calculator End-to-End Logic
+            const TICKET_PRICE = 28000;
+            const PARKING_PRICE = 10000;
+
+            const inputTicket = document.getElementById('input-ticket-qty');
+            const inputParking = document.getElementById('input-parking-qty');
+            const btnDecTicket = document.getElementById('btn-dec-ticket');
+            const btnIncTicket = document.getElementById('btn-inc-ticket');
+            const btnDecParking = document.getElementById('btn-dec-parking');
+            const btnIncParking = document.getElementById('btn-inc-parking');
+            const totalDisplay = document.getElementById('calc-total-display');
+            const btnRecalc = document.getElementById('btn-recalc');
+
+            function formatRupiah(amount) {
+                return 'Rp. ' + amount.toLocaleString('id-ID');
+            }
+
+            function recalculateTotal() {
+                const tickets = Math.max(1, parseInt(inputTicket.value, 10) || 0);
+                const parking = Math.max(0, parseInt(inputParking.value, 10) || 0);
+                const total = (tickets * TICKET_PRICE) + (parking * PARKING_PRICE);
+                if (totalDisplay) {
+                    totalDisplay.textContent = formatRupiah(total);
+                }
+            }
+
+            if (btnDecTicket && inputTicket) {
+                btnDecTicket.addEventListener('click', () => {
+                    let val = parseInt(inputTicket.value, 10) || 1;
+                    if (val > 1) {
+                        inputTicket.value = val - 1;
+                        recalculateTotal();
+                    }
+                });
+            }
+
+            if (btnIncTicket && inputTicket) {
+                btnIncTicket.addEventListener('click', () => {
+                    let val = parseInt(inputTicket.value, 10) || 1;
+                    inputTicket.value = val + 1;
+                    recalculateTotal();
+                });
+            }
+
+            if (btnDecParking && inputParking) {
+                btnDecParking.addEventListener('click', () => {
+                    let val = parseInt(inputParking.value, 10) || 0;
+                    if (val > 0) {
+                        inputParking.value = val - 1;
+                        recalculateTotal();
+                    }
+                });
+            }
+
+            if (btnIncParking && inputParking) {
+                btnIncParking.addEventListener('click', () => {
+                    let val = parseInt(inputParking.value, 10) || 0;
+                    inputParking.value = val + 1;
+                    recalculateTotal();
+                });
+            }
+
+            if (inputTicket) {
+                inputTicket.addEventListener('input', () => {
+                    if (parseInt(inputTicket.value, 10) < 1) inputTicket.value = 1;
+                    recalculateTotal();
+                });
+            }
+
+            if (inputParking) {
+                inputParking.addEventListener('input', () => {
+                    if (parseInt(inputParking.value, 10) < 0) inputParking.value = 0;
+                    recalculateTotal();
+                });
+            }
+
+            if (btnRecalc) {
+                btnRecalc.addEventListener('click', () => {
+                    if (inputTicket) inputTicket.value = 1;
+                    if (inputParking) inputParking.value = 1;
+                    recalculateTotal();
+                    btnRecalc.style.transform = 'scale(0.97)';
+                    setTimeout(() => { btnRecalc.style.transform = ''; }, 150);
+                });
+            }
+
+            // 3. Map Layer Toggle (Google Maps Live Satellite vs Static Route Map)
+            const btnToggleMap = document.getElementById('btn-toggle-map');
+            const mapContainer = document.getElementById('map-container');
+            const toggleMapLabel = document.getElementById('toggle-map-label');
+
+            if (btnToggleMap && mapContainer && toggleMapLabel) {
+                btnToggleMap.addEventListener('click', () => {
+                    const isStatic = mapContainer.classList.toggle('show-static');
+                    if (isStatic) {
+                        toggleMapLabel.textContent = 'Google Maps';
+                        btnToggleMap.classList.remove('outline');
+                        btnToggleMap.classList.add('teal');
+                    } else {
+                        toggleMapLabel.textContent = 'Peta Rute';
+                        btnToggleMap.classList.remove('teal');
+                        btnToggleMap.classList.add('outline');
+                    }
+                });
+            }
+
+            // 4. Download Map Offline Button
+            const btnDownloadMap = document.getElementById('btn-download-map');
+            if (btnDownloadMap) {
+                btnDownloadMap.addEventListener('click', () => {
+                    const a = document.createElement('a');
+                    a.href = 'assets/images/detail_katalog/peta_jalur_cibulao.png';
+                    a.download = 'Peta_Jalur_Curug_Cibulao_EksploTrip.png';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                });
+            }
+
+            // 5. Copy Contact Numbers to Clipboard
+            const copyBtns = document.querySelectorAll('.btn-copy-contact');
+            copyBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const num = btn.getAttribute('data-copy');
+                    if (num) {
+                        navigator.clipboard.writeText(num).then(() => {
+                            const originalHTML = btn.innerHTML;
+                            btn.classList.add('copied');
+                            btn.innerHTML = '<span class="material-symbols-outlined">check</span><span>Tersalin!</span>';
+                            setTimeout(() => {
+                                btn.classList.remove('copied');
+                                btn.innerHTML = originalHTML;
+                            }, 2000);
+                        }).catch(() => {
+                            // Fallback
+                            const temp = document.createElement('textarea');
+                            temp.value = num;
+                            document.body.appendChild(temp);
+                            temp.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(temp);
+                            btn.classList.add('copied');
+                            btn.innerHTML = '<span class="material-symbols-outlined">check</span><span>Tersalin!</span>';
+                            setTimeout(() => {
+                                btn.classList.remove('copied');
+                                btn.innerHTML = '<span class="material-symbols-outlined">content_copy</span><span>Salin</span>';
+                            }, 2000);
+                        });
+                    }
+                });
+            });
+
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian - EksploTrip</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Search Success Stylesheet -->
+    <link rel="stylesheet" href="search_succes.css">
+</head>
+<body>
+
+    <!-- ===== 1. HEADER & NAVIGATION ===== -->
+    <header class="navbar" role="banner">
+        <div class="navbar-container">
+            <a href="beranda.html" class="navbar-brand" aria-label="EksploTrip Beranda">
+                <img src="assets/images/search_succes/logo_eksplotrip_navbar.png" alt="EksploTrip Logo" class="navbar-logo">
+            </a>
+
+            <nav class="navbar-menu" aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li class="nav-item active"><a href="beranda.html" aria-current="page">Beranda</a></li>
+                    <li class="nav-item"><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                    <li class="nav-item"><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <a href="beranda.html" class="btn-back-nav" aria-label="Kembali ke Beranda">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Kembali</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== 2. MAIN CONTENT ===== -->
+    <main>
+
+        <!-- Hasil Pencarian: Ditemukan -->
+        <section class="destinations-section" aria-labelledby="search-results-title">
+            <div class="destinations-header">
+                <div class="destinations-title-group">
+                    <h1 class="destinations-title" id="search-results-title">Destinasi Wisata Alam Ditemukan</h1>
+                    <p class="destinations-subtitle">Berikut adalah beberapa destinasi wisata yang tersedia.</p>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Kartu Destinasi: Curug Cibulao -->
+                <article class="destination-card">
+                    <div class="card-media">
+                        <span class="card-badge">
+                            <span class="material-symbols-outlined">water_drop</span>
+                            <span>Curug/Air Terjun</span>
+                        </span>
+                        <img src="assets/images/search_succes/list_katalog.png" alt="Curug Cibulao" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h2 class="card-title">Curug Cibulao</h2>
+                            <span class="card-location">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <span>Cisarua, Bogor</span>
+                            </span>
+                        </div>
+                        <ul class="card-tags">
+                            <li>Trek Landai</li>
+                            <li>Alam Asri</li>
+                            <li>Ramah Keluarga</li>
+                        </ul>
+                        <div class="card-footer-row">
+                            <span class="card-verified">
+                                <span class="material-symbols-outlined">verified_user</span>
+                                <span>Terverifikasi</span>
+                            </span>
+                            <a href="detail_katalog.html" class="card-action-btn" aria-label="Lihat detail Curug Cibulao">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Banner Bawah -->
+        <section class="banner-bottom-section" aria-label="Banner Pemandangan">
+            <div class="banner-bottom-wrapper">
+                <img src="assets/images/search_succes/banner_bawah.png" alt="Pemandangan pegunungan berkabut" class="banner-bottom-img">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 3. FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/images/search_succes/logo_eksplotrip_footer.png" alt="EksploTrip Logo" class="footer-logo">
+                    <p class="footer-brand-desc">EksploTrip platform informasi pertama yang dirancang khusus wisata alam yang membantu kamu menemukan destinasi, mengenal kondisi perjalanan, serta mempersiapkan perjalanan dengan informasi yang lebih jelas dan transparan.</p>
+                </div>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Eksplorasi">
+                    <h4 class="footer-col-title">Eksplorasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li><a href="eksplorasi_destinasi.html">Eksplorasi Destinasi</a></li>
+                        <li><a href="bantuan_darurat.html">Bantuan Darurat</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col footer-col-links" aria-label="Navigasi Dukungan">
+                    <h4 class="footer-col-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Pusat Bantuan</a></li>
+                        <li><a href="javascript:void(0)">Kebijakan Privasi</a></li>
+                        <li><a href="javascript:void(0)">Syarat &amp; Ketentuan</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Tetap Terhubung</h4>
+                    <p class="footer-social-desc">Temukan berbagai informasi dan rekomendasi destinasi wisata alam untuk membantu merencanakan perjalanan yang aman dan menyenangkan bersama EksploTrip.</p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="Instagram EksploTrip">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="TikTok EksploTrip">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="social-icon-btn" aria-label="X (Twitter) EksploTrip">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copyright"><small>&copy; 2026 <strong>EksploTrip</strong>. Hak Cipta Dilindungi</small></p>
+        </div>
+    </footer>
+
+    <!-- ===== 4. SEARCH QUERY ROUTING SCRIPT ===== -->
+    <script>
+        (function () {
+            'use strict';
+            const params = new URLSearchParams(window.location.search);
+            const rawQuery = params.get('q');
+            if (rawQuery !== null && rawQuery.trim() !== '') {
+                const q = rawQuery.trim().toLowerCase();
+                const validKeywords = [
+                    'curug', 'cibulao', 'cisarua', 'bogor', 'air terjun',
+                    'situ', 'danau', 'gunung', 'bukit', 'kencana', 'luhur',
+                    'bidadari', 'ciherang', 'leuwi', 'hejo', 'gede', 'salak',
+                    'tamansari', 'megamendung', 'sentul', 'sukamakmur', 'pamijahan'
+                ];
+                const isMatch = validKeywords.some(kw => q.includes(kw) || kw.includes(q));
+                if (!isMatch) {
+                    window.location.replace('search_error.html?q=' + encodeURIComponent(rawQuery.trim()));
+                }
+            }
+        })();
+    </script>
+
+</body>
+</html>
