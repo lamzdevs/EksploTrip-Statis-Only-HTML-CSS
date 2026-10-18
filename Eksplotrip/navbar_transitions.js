@@ -119,7 +119,7 @@
             };
 
             const pageFiles = {
-                beranda: 'beranda.html',
+                beranda: 'index.html',
                 eksplorasi: 'eksplorasi_destinasi.html',
                 bantuan: 'bantuan_darurat.html'
             };
@@ -226,7 +226,7 @@
                 const href = link.getAttribute('href');
                 if (!href) return;
 
-                if (href === 'beranda.html' || href.endsWith('/beranda.html')) {
+                if (href === 'index.html' || href.endsWith('/index.html') || href === 'beranda.html' || href.endsWith('/beranda.html')) {
                     e.preventDefault();
                     slideTo('beranda');
                 } else if (href === 'eksplorasi_destinasi.html' || href.endsWith('/eksplorasi_destinasi.html') || link.classList.contains('cta-btn') || link.classList.contains('destinations-view-all')) {
@@ -240,7 +240,7 @@
 
             // Browser back / forward buttons
             window.addEventListener('popstate', function(e) {
-                const path = window.location.pathname.split('/').pop() || 'beranda.html';
+                const path = window.location.pathname.split('/').pop() || 'index.html';
                 if (e.state && e.state.view) {
                     slideTo(e.state.view, false);
                 } else if (path === 'bantuan_darurat.html') {
